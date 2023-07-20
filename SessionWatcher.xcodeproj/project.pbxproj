@@ -16,6 +16,7 @@
 		19E57EBB2A699C6B00D8639F /* SessionWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E57EBA2A699C6B00D8639F /* SessionWatcher.swift */; };
 		19E57EBD2A699E1E00D8639F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E57EBC2A699E1E00D8639F /* main.swift */; };
 		19E57EBF2A69A3E500D8639F /* ShowScreenSaverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E57EBE2A69A3E500D8639F /* ShowScreenSaverViewController.swift */; };
+		19E57F032A69B8FF00D8639F /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E57F022A69B8FF00D8639F /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		19E57EBA2A699C6B00D8639F /* SessionWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionWatcher.swift; sourceTree = "<group>"; };
 		19E57EBC2A699E1E00D8639F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		19E57EBE2A69A3E500D8639F /* ShowScreenSaverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowScreenSaverViewController.swift; sourceTree = "<group>"; };
+		19E57F022A69B8FF00D8639F /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				19E57EBA2A699C6B00D8639F /* SessionWatcher.swift */,
 				19E57EA62A699C4300D8639F /* AppDelegate.swift */,
 				19E57EA82A699C4300D8639F /* SceneDelegate.swift */,
+				19E57F022A69B8FF00D8639F /* SecondVC.swift */,
 				19E57EBE2A69A3E500D8639F /* ShowScreenSaverViewController.swift */,
 				19E57EAA2A699C4300D8639F /* ViewController.swift */,
 				19E57EAC2A699C4300D8639F /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			files = (
 				19E57EAB2A699C4300D8639F /* ViewController.swift in Sources */,
 				19E57EBF2A69A3E500D8639F /* ShowScreenSaverViewController.swift in Sources */,
+				19E57F032A69B8FF00D8639F /* SecondVC.swift in Sources */,
 				19E57EBD2A699E1E00D8639F /* main.swift in Sources */,
 				19E57EBB2A699C6B00D8639F /* SessionWatcher.swift in Sources */,
 				19E57EA72A699C4300D8639F /* AppDelegate.swift in Sources */,
