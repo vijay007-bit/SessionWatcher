@@ -24,7 +24,7 @@ class SessionWatcher: UIApplication{
         super.sendEvent(event)
         if let touches = event.allTouches {
             for touch in touches where touch.phase == UITouch.Phase.began {
-                UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: false)
+                currentWindow?.rootViewController?.dismiss(animated: false)
                 self.resetTimer()
             }
         }
@@ -45,8 +45,18 @@ class SessionWatcher: UIApplication{
         let vc = storyboard.instantiateViewController(withIdentifier: "ShowScreenSaverViewController")
         vc.modalPresentationStyle = .overCurrentContext
         vc.modalTransitionStyle = .coverVertical
-        UIApplication.shared.keyWindow?.rootViewController?.present(vc, animated: false)
+        currentWindow?.rootViewController?.present(vc, animated: false)
        
     }
 }
 
+extension UIApplication {
+    var currentWindow: UIWindow? {
+        connectedScenes
+        .filter({$0.activationState == .foregroundActive})
+        .map({$0 as? UIWindowScene})
+        .compactMap({$0})
+        .first?.windows
+        .filter({$0.isKeyWindow}).first
+    }
+}
